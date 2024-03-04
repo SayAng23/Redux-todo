@@ -1,7 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
-
+body {
+  background-color: #203f7c;
+  color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,8 +29,10 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  margin: 5rem 0;
+  padding: 2rem;
+  border-radius: 5px;
+  background: #282c34;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,7 +40,43 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.Todoform {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.todo-btn {
+  background: #005a4b;
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+}
+.show-todo {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.li-todo {
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 10px 0;
+  background-color: #005a4b;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-size: small;
+}
+.text-box {
+  box-decoration-break: slice;
+}
+.edit-btn,
+.delete-btn {
+  border: none;
+  padding: 0.2rem;
+  background: #005a4b;
+  color: #fff;
+  cursor: pointer;
+ }
 .App-link {
   color: #61dafb;
 }
@@ -36,3 +89,4 @@
     transform: rotate(360deg);
   }
 }
+
